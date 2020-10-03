@@ -8,10 +8,26 @@
   <name>mvc-mvn-controller-app Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
-  <properties>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.source>1.8</maven.compiler.source>
-  </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <finalName>mvc-mvn-controller-app</finalName>
+  
+    </build>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
   
   <dependencies>
   
@@ -50,10 +66,12 @@
       <version>1.2</version>
     </dependency>
     
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>1.1.2</version>
+    </dependency>
+    
   </dependencies>
 
-  <build>
-    <finalName>mvc-mvn-controller-app</finalName>
-  </build>
-  
 </project>
