@@ -28,7 +28,9 @@ public class CustomerController {
 			BindingResult theBindingResult) {
 		
 		System.out.println("CustomerController::processForm(..)");
-		System.out.println("- Customer Last Name: [" + theCustomer.getLastName() + "]");
+		System.out.println("- Customer lastName: [" + theCustomer.getLastName() + "]");
+		System.out.println("- Customer firstName: [" + theCustomer.getFirstName() + "]");
+		System.out.println("- Customer freePasses: [" + theCustomer.getFreePasses() + "]");
 		if (theBindingResult.hasErrors())
 			return "customer-form";
 		else {
