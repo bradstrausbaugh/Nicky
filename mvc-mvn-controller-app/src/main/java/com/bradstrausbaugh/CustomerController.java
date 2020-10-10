@@ -31,6 +31,7 @@ public class CustomerController {
 		System.out.println("- Customer lastName: [" + theCustomer.getLastName() + "]");
 		System.out.println("- Customer firstName: [" + theCustomer.getFirstName() + "]");
 		System.out.println("- Customer freePasses: [" + theCustomer.getFreePasses() + "]");
+		System.out.println("- Postal Code: [" + theCustomer.getPostalCode() + "]");
 		if (theBindingResult.hasErrors())
 			return "customer-form";
 		else {
