@@ -13,7 +13,7 @@
 
 <body>
 
-<i>Fill out the form.  Asterisk (*) means required.<i>
+<i>Fill out the form.  Asterisk (*) means required.</i>
 
     <br><br>
 
