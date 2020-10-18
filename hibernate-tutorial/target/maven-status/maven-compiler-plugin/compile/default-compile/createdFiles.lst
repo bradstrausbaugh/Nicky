@@ -1,1 +1,6 @@
+com\luv2code\hibernate\demp\QueryStudentDemo.class
 com\luv2code\jdbc\TestJdbc.class
+com\luv2code\hibernate\demo\entity\Student.class
+com\luv2code\hibernate\demp\CreateStudentDemo.class
+com\luv2code\hibernate\demp\PrimaryKeyDemo.class
+com\luv2code\hibernate\demp\ReadStudentDemo.class
