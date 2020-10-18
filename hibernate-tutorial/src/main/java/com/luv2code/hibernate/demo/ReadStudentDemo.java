@@ -1,4 +1,4 @@
-package com.luv2code.hibernate.demp;
+package com.luv2code.hibernate.demo;
 
 import java.util.List;
 
