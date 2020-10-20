@@ -1,6 +1,8 @@
-C:\Users\brads\git\Nicky\hibernate-tutorial\src\main\java\com\luv2code\hibernate\demp\ReadStudentDemo.java
-C:\Users\brads\git\Nicky\hibernate-tutorial\src\main\java\com\luv2code\hibernate\demp\QueryStudentDemo.java
-C:\Users\brads\git\Nicky\hibernate-tutorial\src\main\java\com\luv2code\jdbc\TestJdbc.java
-C:\Users\brads\git\Nicky\hibernate-tutorial\src\main\java\com\luv2code\hibernate\demp\PrimaryKeyDemo.java
-C:\Users\brads\git\Nicky\hibernate-tutorial\src\main\java\com\luv2code\hibernate\demo\entity\Student.java
-C:\Users\brads\git\Nicky\hibernate-tutorial\src\main\java\com\luv2code\hibernate\demp\CreateStudentDemo.java
+/home/brad/git/Nicky/hibernate-tutorial/src/main/java/com/luv2code/jdbc/TestJdbc.java
+/home/brad/git/Nicky/hibernate-tutorial/src/main/java/com/luv2code/hibernate/demo/entity/Student.java
+/home/brad/git/Nicky/hibernate-tutorial/src/main/java/com/luv2code/hibernate/demo/DeleteStudentDemo.java
+/home/brad/git/Nicky/hibernate-tutorial/src/main/java/com/luv2code/hibernate/demo/PrimaryKeyDemo.java
+/home/brad/git/Nicky/hibernate-tutorial/src/main/java/com/luv2code/hibernate/demo/ReadStudentDemo.java
+/home/brad/git/Nicky/hibernate-tutorial/src/main/java/com/luv2code/hibernate/demo/UpdateStudentDemo.java
+/home/brad/git/Nicky/hibernate-tutorial/src/main/java/com/luv2code/hibernate/demo/QueryStudentDemo.java
+/home/brad/git/Nicky/hibernate-tutorial/src/main/java/com/luv2code/hibernate/demo/CreateStudentDemo.java
