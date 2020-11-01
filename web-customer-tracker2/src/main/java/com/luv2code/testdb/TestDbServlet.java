@@ -39,7 +39,7 @@ public class TestDbServlet extends HttpServlet {
 			Class.forName(driver);  // loads database driver - not sure how this works
 			Connection myConn = DriverManager.getConnection(jdbcUrl, user, pass);
 			
-			System.out.println("SUCCESS!!!");  // got here wo an exception
+			out.println("SUCCESS!!!");  // got here wo an exception
 			
 			myConn.close();
 			
