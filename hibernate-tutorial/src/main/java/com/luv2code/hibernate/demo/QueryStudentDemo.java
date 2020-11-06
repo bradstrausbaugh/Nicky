@@ -1,8 +1,11 @@
 package com.luv2code.hibernate.demo;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
 import com.luv2code.hibernate.demo.entity.Student;
 
@@ -20,13 +23,21 @@ public class QueryStudentDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			// use the session object to save Java object
-			System.out.println("Creating a new Student object.");
-			Student tempStudent = new Student("Paul", "Wall", "paul@luv2code.com");
+
+			// start a transaction
 			session.beginTransaction();
-			System.out.println("Saving the student...");
-			session.save(tempStudent);
+
+			// query students
+			List<Student> theStudents = session.createQuery("from Student").getResultList();
+			
+			// display the students
+			for (Student tempStudent : theStudents) {
+				System.out.println(tempStudent);
+			}
+			
+			// commit transaction
 			session.getTransaction().commit();
+
 			System.out.println("Done!");
 		}
 		finally {
