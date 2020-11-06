@@ -35,6 +35,25 @@ public class QueryStudentDemo {
 				System.out.println(tempStudent);
 			}
 			
+			// query all student whose lastName is "Doe"...
+			System.out.println("\n\nDisplay Student with lastName of 'Doe");
+			theStudents = session.createQuery("from Student s where s.lastName = 'Doe'").getResultList();
+				// note: we use s.lastName, the property not the getter
+			displayStudents(theStudents);
+			
+			// query all student whose lastName is "Doe" and firstName is "Daffy" ...
+			System.out.println("\n\nDisplay Students with lastName of 'Doe' and firstName is 'Daffy'...");
+			theStudents = session
+					.createQuery("from Student s where s.lastName = 'Doe' or s.firstName = 'Daffy'")
+					.getResultList();
+				// note: we use properties not getters
+			displayStudents(theStudents);
+			
+			// query all student whose email ends with 'luv2code.com'...
+			System.out.println("\n\nDisplay Students whose email ends with 'luv2code.com'");
+			theStudents = session.createQuery("from Student s where s.email LIKE '%luv2code.com'").getResultList();
+				// note: we use properties not getters
+			displayStudents(theStudents);			
 			// commit transaction
 			session.getTransaction().commit();
 
@@ -44,6 +63,12 @@ public class QueryStudentDemo {
 			factory.close();
 		}
 
+	}
+	
+	private static void displayStudents(List<Student> theStudents) {
+		for (Student tempStudent : theStudents) {
+			System.out.println(tempStudent);
+		}
 	}
 
 }
