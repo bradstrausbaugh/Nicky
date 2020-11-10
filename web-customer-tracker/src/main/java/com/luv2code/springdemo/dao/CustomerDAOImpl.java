@@ -19,7 +19,6 @@ public class CustomerDAOImpl implements CustomerDAO {
 	private SessionFactory sessionFactory;
 
 	@Override
-	@Transactional
 	public List<Customer> getCustomers() {
 
 		System.out.println("BRAD!!!!! just inside CustomerDAOImpl::getCustomers()");

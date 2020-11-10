@@ -10,14 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.luv2code.springdemo.dao.CustomerDAO;
 import com.luv2code.springdemo.entity.Customer;
+import com.luv2code.springdemo.service.CustomerService;
 
 @Controller
 @RequestMapping("/customer")
 public class CustomerController {
 	
-	// inject the customer dao
+    // inject our customer service
 	@Autowired
-	private CustomerDAO customerDAO;
+	private CustomerService customerService;
 	
 	// @RequestMapping("/list") // use this for all HTTP methods - like GET and POST
 	@GetMapping("/list") // use this for only HTTP GET
@@ -25,8 +26,8 @@ public class CustomerController {
 		
 		System.out.println("BRAD!!!!!! just inside CustomerController::listCustomers()");
 		
-		// get customers from the dao
-		List<Customer> theCustomers = customerDAO.getCustomers();
+		// get customers from the dao - now using a CustomerService instead of CustomerDAO
+		List<Customer> theCustomers = customerService.getCustomers();
 		
 		// add the retrieved customers to the model
 		theModel.addAttribute("customers", theCustomers);
