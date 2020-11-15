@@ -17,6 +17,7 @@ public class MainDemoApp {
 		
 		// call the business method
 		theAccountDAO.addAccount();
+		theAccountDAO.addAccount();  // and again just to verify the aspect runs each time
 		
 		// close the context
 		context.close();
