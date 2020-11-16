@@ -20,6 +20,7 @@ public class MainDemoApp {
 		// call the business method
 		theAccountDAO.addAccount();
 		theMembershipDAO.addAccount();  // now the MEMBERSHIP version
+		theMembershipDAO.addSillyMember();  // to demonstrate the add* pointcut
 		
 		// close the context
 		context.close();
