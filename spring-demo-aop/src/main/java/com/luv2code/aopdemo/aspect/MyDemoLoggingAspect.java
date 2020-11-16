@@ -14,7 +14,9 @@ public class MyDemoLoggingAspect {
 
 	// Before any call to a method that matches this signature... 
 	// later we'll see variations on these Pointcut Expressions
-	@Before("execution(public void addAccount())")  // any class here - more later
+	// @Before("execution(public void addAccount())")  // any class here - more later
+	// now for class-specific ...
+	@Before("execution(public void com.luv2code.aopdemo.dao.AccountDAO.addAccount())")  // any class here - more later
 	public void beforeAddAccountAdvice() {  // this can be named anything
 		System.out.println("\n=====>>> Executing @Before advice on addAccount()");
 	}
