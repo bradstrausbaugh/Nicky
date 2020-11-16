@@ -17,7 +17,7 @@ public class MyDemoLoggingAspect {
 	// @Before("execution(public void addAccount())")  // any class here - more later
 	// now for class-specific ...
 	// @Before("execution(public void com.luv2code.aopdemo.dao.AccountDAO.addAccount())")  // any class here - more later
-	@Before("execution(public void add*())")  // any class here - more later
+	@Before("execution(public void add*())")  // any class here - any method starting w 'add'
 	public void beforeAddAccountAdvice() {  // this can be named anything
 		System.out.println("\n=====>>> Executing @Before advice on add*()");
 	}
