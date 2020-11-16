@@ -21,4 +21,22 @@ public class MyDemoLoggingAspect {
 	public void beforeAddAccountAdvice() {  // this can be named anything
 		System.out.println("\n=====>>> Executing @Before advice on add*()");
 	}
+	
+	/*
+	 * Additionally, you can match to the number of arguments - shown below but I didn't implement these
+	 * 
+	 * ()    for no arguments
+	 * (*)   for one argument of any type
+	 * (..)  for 0 or more arguments of any type
+	 * 
+	 * ... plus you can variate these ... like this for example ...
+	 * 
+	 * @Before("execution(* com.luv2code.aopdemo.dao.*.*(..))")
+	 *   // here, any return type, any class, any method, any or no parameters
+	 *   // - but mb from the com.luv2code.aopdemo.dao package
+	 *   
+	 *   // - and remember: you use the full-qualified class name for non-primitive types
+	 * 
+	 */
+
 }
