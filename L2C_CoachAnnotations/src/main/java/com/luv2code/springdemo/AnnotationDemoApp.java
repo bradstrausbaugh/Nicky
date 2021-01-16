@@ -12,7 +12,7 @@ public class AnnotationDemoApp {
 		
 		// fetch a bean
 		// Coach coach = context.getBean("thatSillyCoach", Coach.class);
-		Coach coach = context.getBean("tennisCoach", Coach.class);
+		Coach coach = context.getBean("cricketCoach", Coach.class);
 		
 		// print output
 		System.out.println("Today's workout: " + coach.getDailyWorkout());
